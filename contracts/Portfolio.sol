@@ -2,8 +2,10 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract Portfolio{
-//  0x9a53574c86B974839c3A9A9BadAf1c20F19c3406
-//  0x87f3951d582620ec94b7701fE8c4C12F2b086F6B
+//  P1 : 0x9a53574c86B974839c3A9A9BadAf1c20F19c3406
+//  P2 : 0x87f3951d582620ec94b7701fE8c4C12F2b086F6B
+//  P3 : 0x6178FC7FdD9B0D75aa1626f207faBc24a228268E
+
   struct Project{
       uint id;
       string name;
@@ -33,7 +35,7 @@ contract Portfolio{
   Experience[3] public experienceDetails;
 
   string public imageLink="QmSjiH4FLeLabWZruw4ZsJfwydKKRdyUPd84gg3i639Qr3";
-  string public description="a good knowledge in blockchain development.i help web3 community by contributing in the web3 space.";
+  string public description="I am pursuing B. Tech from GEHU. A good knowledge in Blockchain Development. I have experience mainly in Ethereum Blockchain. I am also active in the field of coding . I have also keen interest in learning about technology. ";
   string public resumeLink="QmTYG6xTsWvnK7NWUeDt9vZHT9a4YMmcD7mg1VAf2Z9uHT";
   uint projectCount;
   uint educationCount;

@@ -4,22 +4,35 @@ pragma solidity >=0.4.16 <0.9.0;
 contract First
 {   
     // sample program
-    // string public name ;
-    // uint age;
-    // constructor() 
-    // {
-    //     name = "Ravi";
-    //     age = 17;
-    // }
-    // function getName() view public returns(string memory){
-    //     return name;
-    // }
-    // function getAge() view public returns(uint){
-    //     return age;
-    // }
-    // function setAge() public {
-    //    age = age+1;
-    // }
+    string public name ;
+    uint age;
+    constructor() 
+    {
+        name = "Ravi";
+        age = 17;
+    }
+    function getName() view public returns(string memory){
+        return name;
+    }
+    function getAge() view public returns(uint){
+        return age;
+    }
+    function setAge() public {
+       age = age+1;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -100,4 +113,4 @@ contract First
 
     
 
-}
+

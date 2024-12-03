@@ -2,6 +2,7 @@
 pragma solidity >=0.4.16 <0.9.0;
 
 contract lottery{
+    
     address public manager;
     address payable[] public players;
     address payable public winner;
