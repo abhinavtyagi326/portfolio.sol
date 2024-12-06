@@ -1,0 +1,242 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_rnnNode",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "userId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "DataBroadcasted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "userId",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "result",
+						"type": "string"
+					}
+				],
+				"name": "PredictionCompleted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "userId",
+						"type": "string"
+					}
+				],
+				"name": "TrainingCompleted",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "userId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "encryptedData",
+						"type": "string"
+					}
+				],
+				"name": "broadcastData",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "userId",
+						"type": "string"
+					}
+				],
+				"name": "getEncryptedData",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "userId",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "encryptedData",
+								"type": "string"
+							},
+							{
+								"internalType": "bool",
+								"name": "isTrained",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct RNNManager.EncryptedData",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "userId",
+						"type": "string"
+					}
+				],
+				"name": "getPredictions",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "userId",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "result",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct RNNManager.Prediction[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "userId",
+						"type": "string"
+					}
+				],
+				"name": "markAsTrained",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "rnnNode",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "userId",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "result",
+						"type": "string"
+					}
+				],
+				"name": "submitPrediction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/healthcare/RNNManager.sol": "RNNManager"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/healthcare/RNNManager.sol": {
+			"keccak256": "0xad1dcd31b2d6a1e5e69923b6f45037a1db2c3fad075e890c1b100c3244eb8bc0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2ba0b046cf0ac1f07e95e62ebea4dd11d8db46f5c1d8705192fa57d2d91a9591",
+				"dweb:/ipfs/QmUu1suUvQ94rgEQEyeF3Qpemc8efnka75USVnawdhbkX2"
+			]
+		}
+	},
+	"version": 1
+}
